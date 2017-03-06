@@ -1,0 +1,41 @@
+.target-letters {
+  font-family: Cambria;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+body {
+    background: url('../images/book.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.jumbotron {
+  background: rgba(255, 255, 255, 0);
+  color: yellow;, 
+  text-shadow: black 0px 0px 10px;
+   margin-top: -50px;
+}
+
+.top-container {
+  color: yellow;
+  text-shadow: black 0px 0px 20px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+.bottom-container {
+  font-size: 26px;
+  color: white;
+  text-shadow: #000 0px 0px 20px;
+}
