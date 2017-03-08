@@ -65,7 +65,6 @@ hangman.genTargetArray();
 // This line creates the answer div.
 hangman.generateAnswerDiv();
 
-// this should generate the initial HTML for the lines before the answerDiv.
 hangman.updateHTML();
 
 var html2 = hangman.answerDiv;
@@ -74,19 +73,17 @@ document.querySelector("#gameAnswerField").innerHTML = html2;
 
 hangman.updateHTML();
 
-// Sound links, not working yet. :(
+// Sound bites
 var cheeringAudio = new Audio("../hangman-game/assets/sounds/cheer.wav");
 var booingAudio = new Audio("../hangman-game/assets/sounds/boo.wav");
 var userGuess;
-// THis captures key clicks
+
 document.onkeyup = function(event) {
-    // Sets a counter, if counter is 0, that means the user's guess did not match :(
     var counter = 0;
     // This determines which exact key was selected. Makes uppercase
     userGuess = String.fromCharCode(event.keyCode).toUpperCase();
     var par = document.getElementsByClassName("target-letters");
 
-    // This SHOULD stop people from entering previously entered letters
     if (hangman.lettersUsed.indexOf(userGuess) < 0) {
         for (var i = 0; i < hangman.targetArray.length; i++) {
             if (userGuess === hangman.targetArray[i]) {
